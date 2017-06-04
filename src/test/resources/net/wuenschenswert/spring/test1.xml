@@ -15,7 +15,7 @@
     <property name="properties" ref="properties"/>
   </bean>
 
-  <bean id="guineePig" class="net.wuenschenswert.spring.TstBean">
+  <bean id="guineePig" class="net.wuenschenswert.spring.TstBean" scope="singleton">
     <property name="propA" value="#{foo}"/>
     <property name="propB" value="#{bar}"/>
   </bean>

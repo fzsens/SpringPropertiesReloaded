@@ -33,6 +33,7 @@ public class ConfigurerTest extends TestCase {
     properties.setProperties(newProps);
     assertEquals(newFooVal, guineePig.getPropA());
     assertEquals(newBarVal, guineePig.getPropB());
+
   }
 
   // more tests:

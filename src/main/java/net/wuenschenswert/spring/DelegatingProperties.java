@@ -4,10 +4,14 @@ import java.util.*;
 import java.io.*;
 
 /**
+ *
+ * delegate Properties
+ *
  * Overrides all methods of java.util.Properties using delegation.
  * Would implement instead of extend java.util.Properties if it was an interface.
  */
 public abstract class DelegatingProperties extends Properties {
+
   protected abstract Properties getDelegate();
 
   public void load(InputStream inStream) throws IOException {
